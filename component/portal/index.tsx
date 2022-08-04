@@ -15,9 +15,10 @@ export default function PortalComponent() {
             <h1 className='font-bold text-3xl'>Welcome</h1>
             <h1 className='font-bold text-3xl'>Simple Bank App v2</h1>
         </div>
-        <div className='my-10 mx-auto flex flex-col text-center w-96 border'>
-            <ButtonComponent function={() => onDirect("/login")} title='Log In'/>
-            <ButtonComponent function={() => onDirect("/register")} title='Register'/>
+        <div className='my-10 mx-auto flex flex-col text-center w-[25rem] p-5 border'>
+            <ButtonComponent link={{url:'/login', newtab:false}} title='Log In'/>
+            <ButtonComponent link={{url:'/register', newtab:false}} title='Register'/>
+            <ButtonComponent link={{url:'https://github.com/luxamrown', newtab:true}} title='Github'/>
         </div>
     </div>
   )

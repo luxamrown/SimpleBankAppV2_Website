@@ -14,9 +14,9 @@ export function LabelFormComponent(props:{title:string, htmlFor?:string, class?:
 
 export function FormComponent(props:{title:string, childrenC:ReactNode, childrenButton:ReactNode}) {
   return (
-    <div className='w-[30rem] mx-auto text-center mt-56'>
+    <div className='w-[30rem] mx-auto text-center'>
         <form className=' py-5 border'>
-            <h1 className='font-bold text-xl my-5'>Register Account</h1>
+            <h1 className='font-bold text-xl my-5'>{props.title}</h1>
             <div className='flex flex-col mx-10'>
               {props.childrenC}
             </div>

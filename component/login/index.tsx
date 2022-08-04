@@ -4,6 +4,7 @@ import { FormComponent, InputFormComponent, LabelFormComponent } from '../form'
 
 export default function LoginComponent() {
   return (
+    <div className='mt-52'>        
         <FormComponent 
         title='Log In'
         childrenC={
@@ -15,8 +16,13 @@ export default function LoginComponent() {
             </>
         }
         childrenButton={
+          <div className='mx-auto w-56'>
             <ButtonComponent title='Log In' />
+          </div>
+
+
         }
         />
+    </div>
   )
 }
